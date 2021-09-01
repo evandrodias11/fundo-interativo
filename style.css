@@ -1,0 +1,80 @@
+:root{
+--cor-floresta: rgb(3, 102, 79);
+--cor-trevo: #19563e;
+--cor-esmeralda:rgb(31, 86, 76); 
+}
+
+
+body, header, main{
+    background-color: #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;  
+    text-align: center;
+}
+
+table, ul, li{
+    margin: 0 auto;
+    padding: 0;
+}
+
+thead{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.fundopreto {
+    background-color: #000;
+    color: #fff;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.floresta1, .verde1, .esmeralda1 {
+    background-color: #000;    
+}
+
+.floresta1{
+    color: var(--cor-floresta);
+}
+
+.verde1 {
+    color: var(--cor-trevo);
+}
+
+.esmeralda1 {
+    color: var(--cor-esmeralda);
+}
+
+
+
+.floresta2, .verde2, .esmeralda2 {
+    width: 400px;
+    font-size: 40px;
+}
+
+.floresta2{
+    color: var(--cor-floresta);
+}
+
+.verde2 {
+    color: var(--cor-trevo);
+}
+
+.esmeralda2 {
+    color: var(--cor-esmeralda);
+}
+
+h2 {
+    margin: 10px;
+}
+
+#fundointerativo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.botoes {
+    padding-bottom: 10px;
+}

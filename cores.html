@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>cores css</title>
+    </head> 
+
+    <body>
+        <header>
+            <h1>Catálogo de Cores</h1>
+        </header>
+        <main>
+            <div class="fundopreto">
+            <h2 >Testes com o fundo PRETO</h2>
+            </div>  
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome da cor</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="floresta1">Floresta Amazônica</td>
+                        <td class="floresta1">RGB: 3, 102, 79</td>
+                    </tr>
+                    <tr>
+                        <td class="verde1">Verde Trevo</td>
+                        <td class="verde1">hex: #19563e</td>
+                    </tr>
+                    <tr>
+                        <td class="esmeralda1">Esmeralda Intensa</td>
+                        <td class="esmeralda1">RGB: 31, 86, 76</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Testes com o fundo INTERATIVO</h2>
+            
+            <div class="botoes">
+            <button onclick="trocaFundo()">Escolha a cor de fundo e clique aqui !</button>
+
+            <select id="corFundo">
+                <option value="white">Branco</option>
+                <option value="yellow">Amarelo</option>
+                <option value="red">Vermelho</option>
+                <option value="pink">Rosa</option>
+                <option value="black">Preto</option>
+            </select>
+            </div>
+
+            <div id="fundointerativo">
+                <ul class="tabela">
+                    <li class="floresta2">Floresta Amazônica</li>
+                    <li class="verde2">Verde Trevo</li>
+                    <li class="esmeralda2">Esmeralda Intensa</li>
+                </ul>
+            </div>
+
+            <script>
+                function trocaFundo () {
+                    let x = document.getElementById('corFundo').value 
+                    document.getElementById('fundointerativo').style.backgroundColor = x
+                }
+            </script>
+        </main>
+    </body>
+</html>    
